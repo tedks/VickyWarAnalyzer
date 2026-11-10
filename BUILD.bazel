@@ -2,6 +2,7 @@ load("@rules_java//java:java_library.bzl", "java_library")
 
 java_library(
     name = "war_model",
+    # The JavaFX-dependent Country.java belongs to the Maven GUI closure.
     srcs = [
         "src/main/java/ee/tkasekamp/vickywaranalyzer/core/Battle.java",
         "src/main/java/ee/tkasekamp/vickywaranalyzer/core/JoinedCountry.java",
