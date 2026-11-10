@@ -1,0 +1,10 @@
+load("@rules_java//java:java_test.bzl", "java_test")
+
+java_test(
+    name = "war_model_test",
+    size = "small",
+    srcs = ["WarModelTest.java"],
+    main_class = "WarModelTest",
+    use_testrunner = False,
+    deps = ["//:war_model"],
+)

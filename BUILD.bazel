@@ -1,0 +1,15 @@
+load("@rules_java//java:java_library.bzl", "java_library")
+
+java_library(
+    name = "war_model",
+    # The JavaFX-dependent Country.java belongs to the Maven GUI closure.
+    srcs = [
+        "src/main/java/ee/tkasekamp/vickywaranalyzer/core/Battle.java",
+        "src/main/java/ee/tkasekamp/vickywaranalyzer/core/JoinedCountry.java",
+        "src/main/java/ee/tkasekamp/vickywaranalyzer/core/Unit.java",
+        "src/main/java/ee/tkasekamp/vickywaranalyzer/core/War.java",
+        "src/main/java/ee/tkasekamp/vickywaranalyzer/core/WarGoal.java",
+        "src/main/java/ee/tkasekamp/vickywaranalyzer/util/Constants.java",
+    ],
+    visibility = ["//visibility:public"],
+)
